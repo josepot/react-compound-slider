@@ -1,7 +1,13 @@
 // @flow weak
 
 import React, { Component } from 'react'
-import Slider, { Rail, Handles, Tracks, Ticks } from 'react-compound-slider'
+import {
+  StatelessSlider as Slider,
+  Rail,
+  Handles,
+  Tracks,
+  Ticks,
+} from 'react-compound-slider'
 import ValueViewer from 'docs/src/pages/ValueViewer' // for examples only - displays the table above slider
 import { Handle, Track, Tick } from './components' // example render components - source below
 
@@ -49,7 +55,7 @@ class Example extends Component {
           rootStyle={sliderStyle}
           onUpdate={this.onUpdate}
           onChange={this.onChange}
-          defaultValues={values}
+          values={update}
         >
           <Rail>
             {({ getRailProps }) => (

@@ -1,4 +1,4 @@
-import Slider from './Slider'
+import Slider, { StatelessSlider } from './Slider'
 import Rail from './Rail'
 import Ticks from './Ticks'
 import Tracks from './Tracks'
@@ -10,4 +10,4 @@ Slider.Tracks = Tracks
 Slider.Handles = Handles
 
 export default Slider
-export { Rail, Ticks, Tracks, Handles }
+export { StatelessSlider, Rail, Ticks, Tracks, Handles }
