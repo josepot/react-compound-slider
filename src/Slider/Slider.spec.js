@@ -127,7 +127,7 @@ describe('<Slider />', () => {
     const eventSpy = sinon.spy(Slider.prototype, 'addMouseEvents')
 
     const wrapper = mount(
-      <Slider step={1} domain={[0, 100]} defaultValues={[25]}>
+      <Slider step={1} domain={[0, 100]} values={[25]}>
         <Handles>
           {({ handles, getHandleProps }) => {
             return (
@@ -150,7 +150,7 @@ describe('<Slider />', () => {
     const eventSpy = sinon.spy(Slider.prototype, 'addTouchEvents')
 
     const wrapper = mount(
-      <Slider step={1} domain={[0, 100]} defaultValues={[25]}>
+      <Slider step={1} domain={[0, 100]} values={[25]}>
         <Handles>
           {({ handles, getHandleProps }) => {
             return (
